@@ -8,15 +8,28 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane fx:id="battlefieldNode" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPressed" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lolorbwars.Battlefield">
+
+<BorderPane   maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="800.0" prefWidth="1200.0"  xmlns="http://javafx.com/javafx/19"
+fx:id="battlefieldNode"
+style="-fx-background-color: green;"
+onKeyPressed="#handleKeyPressed"
+focusTraversable="true"
+xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="com.lolorbwars.Battlefield">
    <bottom>
-      <SplitPane dividerPositions="0.5" prefHeight="100.0" BorderPane.alignment="CENTER">
+      <SplitPane onKeyPressed="#handleKeyPressed"
+      focusTraversable="true" dividerPositions="0.5" prefHeight="100.0" BorderPane.alignment="CENTER">
         <items>
-          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: red;">
+          <AnchorPane onKeyPressed="#handleKeyPressed"
+          focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: red;">
                <children>
-                  <Pane layoutX="14.0" layoutY="9.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <Pane layoutX="14.0" layoutY="9.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0"
+                  onKeyPressed="#handleKeyPressed"
+                  focusTraversable="true">
                      <children>
-                        <Label layoutX="10.0" layoutY="5.0" text="Player 2: " />
+                        <Label layoutX="10.0" layoutY="5.0" text="Player 2: " 
+                        onKeyPressed="#handleKeyPressed"
+                        focusTraversable="true"/>
                         <Label layoutX="10.0" layoutY="22.0" text="Score:" />
                         <Label layoutX="10.0" layoutY="39.0" text="Alive:" />
                         <Label layoutX="10.0" layoutY="56.0" text="Mines:" />
