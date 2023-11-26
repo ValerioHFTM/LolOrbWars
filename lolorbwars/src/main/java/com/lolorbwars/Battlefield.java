@@ -16,12 +16,17 @@ public class Battlefield {
   public void initialize() {
     battlefieldNode.requestFocus();
     keysEvents = new KeyEvents(battlefieldNode);
-    System.out.println("Initialization successfull");
+    System.out.println("Battlefield Initialization successfull");
   }
 
   @FXML
   public void handleKeyPressed(KeyEvent event) throws IOException {
-    System.out.println("im not doing this");
+    System.out.println("Key pressed: ");
     keysEvents.doKeys(event);
+  }
+
+  @FXML
+  public static void switchToMenu() throws IOException {
+    LolOrbWars.setSceneRoot("menu");
   }
 }
