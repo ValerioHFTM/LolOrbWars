@@ -14,9 +14,13 @@ public class Battlefield {
 
   @FXML
   public void initialize() {
-    battlefieldNode.requestFocus();
-    keysEvents = new KeyEvents(battlefieldNode);
-    System.out.println("Battlefield Initialization successfull");
+    if (true == MenuControll.isNewGame()) {
+      battlefieldNode.requestFocus();
+      keysEvents = new KeyEvents(battlefieldNode);
+      System.out.println("Battlefield Initialization successfull");
+    } else {
+      System.out.println("The game continues");
+    }
   }
 
   @FXML

@@ -14,11 +14,11 @@
 
 <VBox 
 fx:controller="com.lolorbwars.MenuControll"
-maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="secondaryButton" alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#switchToPrimary" style="-fx-border-radius: 3;" text="RESUME GAME" textAlignment="CENTER">
+            <Button fx:id="secondaryButton" alignment="TOP_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#switchToBattlefield" style="-fx-border-radius: 3;" text="RESUME GAME" textAlignment="CENTER">
                <padding>
                   <Insets bottom="60.0" left="100.0" right="100.0" top="60.0" />
                </padding>

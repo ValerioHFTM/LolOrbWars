@@ -20,9 +20,14 @@ public class KeyEvents {
     if (event.getCode() == KeyCode.SPACE) {
       Battlefield.switchToMenu();
       System.out.println("Space");
-      draw.form(battlefieldNode);
       System.out.println("it seems to work " + this.battlefieldNode);
       // switchToMenu();
     }
+    if (event.getCode() == KeyCode.ENTER) {
+
+      draw.form(battlefieldNode);
+      System.out.println("Enter");
+    }
   }
+
 }

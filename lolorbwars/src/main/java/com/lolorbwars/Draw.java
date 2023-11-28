@@ -12,7 +12,7 @@ public class Draw {
 
   // public void form() {}
 
-  public void form(BorderPane battlefieldNode) {
+  public void form(BorderPane battlefieldNode, int a) {
     double centerX = 150; // X center position
     double centerY = 150; // Y center position
     double size = 50; // Side length of the hexagon
