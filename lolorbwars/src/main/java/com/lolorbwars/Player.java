@@ -1,15 +1,22 @@
 package com.lolorbwars;
 
+import java.util.HashMap;
+
 // This is the player
 public class Player {
 
-    private Shapes form;
+  private Shapes form;
+  private HashMap<Integer, Integer> playerCoordinates = new HashMap<>();
 
-    public void setForm(Shapes newForm) {
-        this.form = newForm;
-    }
+  public Player(Integer x, Integer y) {
+    playerCoordinates.put(x, y);
+  }
 
-    public Shapes getForm() {
-        return form;
-    }
+  public void setForm(Shapes newForm) {
+    this.form = newForm;
+  }
+
+  public Shapes getForm() {
+    return form;
+  }
 }

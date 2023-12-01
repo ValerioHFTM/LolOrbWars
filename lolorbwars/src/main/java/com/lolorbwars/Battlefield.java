@@ -7,6 +7,10 @@ import javafx.scene.layout.BorderPane;
 
 public class Battlefield {
 
+  static Player p1;
+
+  static Player p2;
+
   @FXML
   private BorderPane battlefieldNode;
 
@@ -14,13 +18,14 @@ public class Battlefield {
 
   @FXML
   public void initialize() {
+    battlefieldNode.requestFocus();
+    keysEvents = new KeyEvents(battlefieldNode, p1, p2);
     if (true == MenuControll.isNewGame()) {
-      battlefieldNode.requestFocus();
-      keysEvents = new KeyEvents(battlefieldNode);
-      System.out.println("Battlefield Initialization successfull");
+      System.out.println("It is a new game");
     } else {
       System.out.println("The game continues");
     }
+    System.out.println("Battlefield Initialization successfull");
   }
 
   @FXML
@@ -32,5 +37,10 @@ public class Battlefield {
   @FXML
   public static void switchToMenu() throws IOException {
     LolOrbWars.setSceneRoot("menu");
+  }
+
+  public static void setPlayer(Player p1, Player p2) {
+    Battlefield.p1 = p1;
+    Battlefield.p2 = p2;
   }
 }
