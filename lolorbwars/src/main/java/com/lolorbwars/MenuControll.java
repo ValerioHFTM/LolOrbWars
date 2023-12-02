@@ -6,8 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 
 public class MenuControll {
+
   private static boolean newGame = true;
-  Player p1, p2;
+  static Player p1, p2;
   @FXML
   private Button startResume;
 
@@ -15,8 +16,6 @@ public class MenuControll {
   private ChoiceBox<Shapes> P1_Shape;
 
   public void initialize() {
-    p1 = new Player();
-    p2 = new Player();
 
     P1_Shape.getItems().addAll(Shapes.values());
     // Add default shape to player one
@@ -40,6 +39,7 @@ public class MenuControll {
 
   @FXML
   private void switchToBattlefield() throws IOException {
+
     newGame = false;
     LolOrbWars.setSceneRoot("battlefield");
 
@@ -49,4 +49,8 @@ public class MenuControll {
     return newGame;
   }
 
+  public static void setPlayer(Player p1, Player p2) {
+    MenuControll.p1 = p1;
+    MenuControll.p2 = p2;
+  }
 }
