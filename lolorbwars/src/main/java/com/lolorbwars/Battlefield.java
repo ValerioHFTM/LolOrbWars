@@ -8,10 +8,6 @@ import javafx.scene.paint.Color;
 
 public class Battlefield {
 
-  static Player p1;
-
-  static Player p2;
-
   @FXML
   private BorderPane battlefieldNode;
 
