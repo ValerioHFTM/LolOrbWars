@@ -8,6 +8,10 @@ import javafx.scene.paint.Color;
 
 public class Battlefield {
 
+  static Player p1;
+
+  static Player p2;
+
   @FXML
   private BorderPane battlefieldNode;
 
@@ -31,6 +35,7 @@ public class Battlefield {
       System.out.println("Battlefield Initialization successfull");
 
     }
+    System.out.println("Battlefield Initialization successfull");
   }
 
   @FXML
@@ -44,5 +49,10 @@ public class Battlefield {
   public static void switchToMenu() throws IOException {
     MenuControll.setPlayer(p1, p2);
     LolOrbWars.setSceneRoot("menu");
+  }
+
+  public static void setPlayer(Player p1, Player p2) {
+    Battlefield.p1 = p1;
+    Battlefield.p2 = p2;
   }
 }

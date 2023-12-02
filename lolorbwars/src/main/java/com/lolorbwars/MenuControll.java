@@ -42,7 +42,6 @@ public class MenuControll {
 
     newGame = false;
     LolOrbWars.setSceneRoot("battlefield");
-
   }
 
   public static boolean isNewGame() {
