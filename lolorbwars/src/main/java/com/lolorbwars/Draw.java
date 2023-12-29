@@ -19,16 +19,37 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
 
+// import javafx.scene.shape.Shape;
+
 public class Draw {
 
-  BorderPane battlefieldNode;
-  DropShadow shadow;
+  // private BorderPane battlefieldNode;
+  private DropShadow shadow;
+  private Player p1, p2;
+  private int x, y;
 
   // public void form() {}
+  public Draw(Player p1, Player p2) {
+    this.p1 = p1;
+    this.p2 = p2;
+  }
 
-  public void form(BorderPane battlefieldNode, Player p) {
-    double centerX = 150; // X center position
-    double centerY = 150; // Y center position
+  public void form(BorderPane battlefieldNode, Player p, Shapes shapes) {
+    x = p.getPlayerCoordinates("x");
+    y = p.getPlayerCoordinates("y");
+
+    double centerX = x; // X center position
+    double centerY = y; // Y center position
+    System.out.println(
+      "Player index: " +
+      p.getIndex() +
+      "\nPlayer Coordinates: (x:" +
+      x +
+      " y:" +
+      y +
+      "\nPlayer Shape: " +
+      shapes
+    );
     double size = 50; // Side length of the hexagon
 
     // Create a hexagon using a Polygon
