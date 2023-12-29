@@ -1,3 +1,18 @@
+/*
+ * ----------------------------------------------------------------
+ * Project:       LoLOrbWars
+ * Authors:       Valerio Bottinelli, Mateusz Kurowski
+ * Release Date:  xx.xx.2024
+ * File Name:     Battlefield.java
+ * ----------------------------------------------------------------
+ * File Information:
+ * This is the Main entry point of the Programm.
+ * We create the
+ *
+ *
+ * ----------------------------------------------------------------
+ */
+
 package com.lolorbwars;
 
 import java.io.IOException;
@@ -8,7 +23,6 @@ import javafx.scene.layout.BorderPane;
 public class Battlefield {
 
   static Player p1;
-
   static Player p2;
 
   @FXML
